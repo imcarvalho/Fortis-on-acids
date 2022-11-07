@@ -18,12 +18,6 @@
 }
 
 :root {
-  /* --background: #371554;
-	--background-alt: #451d67;
-	--text: #eeeeee;
-	--text-alt: #cda0f4;
-	--accent: #ff0077;
-	--accent-alt: #490123; */
   --background: #355070;
   --background-alt: #406187;
   --text: #eeeeee;
@@ -68,14 +62,21 @@ a {
   text-decoration: none;
 }
 
+header.main-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
 header #avatar {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin-bottom: 1em;
   border-radius: 50%;
   border: none;
-  margin-top: 1em;
+  margin-left: 32px;
 }
 
 article a {
@@ -86,9 +87,14 @@ article header {
   text-align: center;
 }
 
-article header h1 {
+header h1 {
   margin-bottom: 0.2em;
   margin-top: 0;
+}
+
+header h1 a {
+  font-size: 0.75em;
+  font-style: normal;
 }
 
 article header h1 a {
@@ -128,7 +134,7 @@ menu {
   padding: 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 menu li {
@@ -146,10 +152,6 @@ menu li:last-child:after {
 
 header {
   margin-bottom: 16px;
-}
-
-menu {
-  margin-bottom: 32px;
 }
 
 footer {
@@ -205,6 +207,14 @@ iframe {
   height: auto;
   border: 8px solid var(--background-alt);
   border-radius: 8px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.emojione {
+  display: inline-block;
+  margin: inherit;
+  border: none;
 }
 
 .microblog_conversation {
