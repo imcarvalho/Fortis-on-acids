@@ -63,20 +63,24 @@ a {
 }
 
 header.main-header {
+  margin-bottom: 0;
+}
+
+header.main-header h1 {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center;
-  margin: 1em 0;
+  align-items: flex-start;
+  margin: 0.5em 0;
 }
 
 header #avatar {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: none;
-  margin-left: 32px;
+  margin-right: 16px;
 }
 
 article a {
@@ -127,6 +131,10 @@ body > header h1 {
   font-style: italic;
   font-weight: 800;
   padding-bottom: 0px;
+}
+
+nav menu {
+  margin-top: 0;
 }
 
 menu {
