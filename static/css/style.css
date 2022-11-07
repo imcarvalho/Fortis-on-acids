@@ -1,224 +1,244 @@
 @font-face {
-	font-family: 'Exo';
-	src: url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2 supports variations'),
-		url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf') format('woff2-variations');
-	font-weight: 100 1000;
-	font-stretch: 25% 151%;
+  font-family: 'Exo';
+  src: url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf')
+      format('woff2 supports variations'),
+    url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf')
+      format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
 }
 
 @font-face {
-	font-family: 'Exo';
-	src: url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2 supports variations'),
-		url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2-variations');
-	font-weight: 100 1000;
-	font-stretch: 25% 151%;
+  font-family: 'Exo';
+  src: url('/fonts/exo/Exo-VariableFont_wght.ttf')
+      format('woff2 supports variations'),
+    url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
 }
 
 :root {
-	--background: #371554;
+  /* --background: #371554;
 	--background-alt: #451d67;
 	--text: #eeeeee;
 	--text-alt: #cda0f4;
 	--accent: #ff0077;
-	--accent-alt: #490123;
+	--accent-alt: #490123; */
+  --background: #355070;
+  --background-alt: #406187;
+  --text: #eeeeee;
+  --text-alt: #e8ab8a;
+  --accent: #e56b6f;
+  --accent-alt: #6d597a;
 }
 
 html {
-	background-color: var(--background);
-	color: var(--text);
-	font-family: 'Exo', sans-serif;
-	line-height: 1.8;
-	font-size: 18px;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Exo', sans-serif;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
 body {
-	max-width: 750px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 16px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
 }
 
 h1 {
-	font-weight: 600;
-	line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h2 {
-	font-weight: 500;
+  font-weight: 500;
 }
 
-h3, h4, h5, h6 {
-	font-weight: 400;
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
 }
 
 a {
-	color: var(--accent);
-	text-decoration: none;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 article a {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 article header {
-	text-align: center;
-}
-
-article header h1 a {
-	color: var(--accent);
-	font-size: 1.6em;
-	text-transform: uppercase;
+  text-align: center;
 }
 
 article header h1 {
-	margin-block-end: 0.2em;
+  margin: 0.2em 0;
+}
+
+article header h1 a {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-style: normal;
+}
+
+article header h1 {
+  margin-block-end: 0.2em;
 }
 
 article header time {
-	color: var(--text-alt);
-	text-transform: uppercase;
+  color: var(--text-alt);
+  text-transform: uppercase;
 }
 
 main {
-	margin: 32px 0 32px 0;
+  margin: 32px 0 32px 0;
 }
 
 body > header {
-	text-align: center;
+  text-align: center;
 }
 
 body > header h1 {
-	font-size: 4em;
-	text-transform: uppercase;
-	font-style: italic;
-	font-weight: 800;
-	padding-bottom: 0px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 800;
+  padding-bottom: 0px;
 }
 
 menu {
-	list-style: none;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.2em;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 menu li {
-	display: inline;
+  display: inline;
 }
 
 menu li:after {
-	content: ' | ';
-	color: var(--background-alt);
+  content: ' | ';
+  color: var(--background-alt);
 }
 
 menu li:last-child:after {
-	content: '';
+  content: '';
 }
 
 header {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 menu {
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 footer {
-	margin-top: 32px;
+  margin-top: 32px;
 }
 
 article {
-	margin: 32px 0 64px 0;
+  margin: 32px 0 64px 0;
 }
 
 hr {
-	border: none;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
+  border: none;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr:after {
-	content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
-	letter-spacing: -9.6px;
-	font-size: 60px;
-	color: var(--background-alt);
+  content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
+  letter-spacing: -9.6px;
+  font-size: 60px;
+  color: var(--background-alt);
+  line-height: 0.5em;
 }
 
 blockquote {
-	border-left: 4px solid var(--background-alt);
-	padding-left: 1em;
-	margin-left: 1em;
+  border-left: 4px solid var(--background-alt);
+  padding-left: 1em;
+  margin-left: 1em;
 }
 
 code {
-	color: var(--accent-alt);
-	background-color: var(--accent);
-	padding: 3px;
-	border-radius: 0.4em;
-	font-size: 16px;
+  color: var(--accent-alt);
+  background-color: var(--accent);
+  padding: 3px;
+  border-radius: 0.4em;
+  font-size: 16px;
 }
 
 pre {
-	background-color: var(--accent);
-	border-radius: 0.4em;
+  background-color: var(--accent);
+  border-radius: 0.4em;
 }
 
 pre code {
-	background-color: inherit;
+  background-color: inherit;
 }
 
-img, video, iframe {
-	max-width: 100%;
-	height: auto;
-	border: 8px solid var(--background-alt);
-	border-radius: 8px;
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  border: 8px solid var(--background-alt);
+  border-radius: 8px;
 }
 
 .microblog_conversation {
-	margin: 16px 0;
+  margin: 16px 0;
 }
 
 .microblog_post {
-	padding-top: 16px;
-	margin: 16px 0;
-	border-top: 1px solid var(--background-alt);
+  padding-top: 16px;
+  margin: 16px 0;
+  border-top: 1px solid var(--background-alt);
 }
 
 .microblog_avatar {
-	border-radius: 1em;
+  border-radius: 1em;
 }
 
 .microblog_time a {
-	color: var(--text-alt);
+  color: var(--text-alt);
 }
 
 .bookshelf_book {
-	min-height: 140px;
-	margin-top: 4px;
-	margin-bottom: 8px;
+  min-height: 140px;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .bookshelf_book img {
-	min-height: 100px;
-	width: 80px !important;
-	min-width: 80px !important;
-	max-height: 140px !important;
-	margin-right: 8px;
-	padding-right: 0 !important;
-	border-radius: 6px !important;
-	background-color: var(--background-alt);
-	justify-content: center;
+  min-height: 100px;
+  width: 80px !important;
+  min-width: 80px !important;
+  max-height: 140px !important;
+  margin-right: 8px;
+  padding-right: 0 !important;
+  border-radius: 6px !important;
+  background-color: var(--background-alt);
+  justify-content: center;
 }
 
 .bookshelf_author {
-	color: var(--text-alt);
-	font-weight: 500;
-	font-size: 1em;
+  color: var(--text-alt);
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .bookshelf_title {
-	font-weight: 600;
-	font-size: 1em;
+  font-weight: 600;
+  font-size: 1em;
 }
