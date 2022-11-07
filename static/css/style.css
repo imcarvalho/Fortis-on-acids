@@ -68,6 +68,14 @@ a {
   text-decoration: none;
 }
 
+header #avatar {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+  border-radius: 40px;
+}
+
 article a {
   font-weight: bold;
 }
