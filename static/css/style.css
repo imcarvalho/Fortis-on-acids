@@ -18,12 +18,12 @@
 }
 
 :root {
-  --background: #355070;
-  --background-alt: #406187;
+  --background: #090024;
+  --background-alt: #7400b8;
   --text: #eeeeee;
-  --text-alt: #e8ab8a;
-  --accent: #e56b6f;
-  --accent-alt: #6d597a;
+  --text-alt: #5e60ce;
+  --accent: #80ffdb;
+  --accent-alt: #39005a;
 }
 
 html {
