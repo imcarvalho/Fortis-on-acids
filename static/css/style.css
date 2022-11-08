@@ -18,7 +18,6 @@
 }
 
 :root {
-  --background: #c7d2fe;
   --background-alt: rgba(0, 0, 0, 0.1);
   --text: rgba(0, 37, 109, 0.9);
   --text-alt: rgba(205, 35, 120, 0.7);
@@ -29,6 +28,13 @@
 }
 
 html {
+  color: var(--text);
+  font-family: 'Exo', sans-serif;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+body {
   background: linear-gradient(
     313deg,
     #fecaca,
@@ -45,20 +51,22 @@ html {
   -moz-animation: colours 15s ease infinite;
   -o-animation: colours 15s ease infinite;
   animation: colours 15s ease infinite;
-  color: var(--text);
-  font-family: 'Exo', sans-serif;
-  line-height: 1.8;
-  font-size: 18px;
 }
 
-body {
-  max-width: 750px;
+.main {
+  max-width: 80%;
   padding: 2em;
   margin: 2em auto;
   border-radius: 1em;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 800px) {
+  body {
+    max-width: 750px;
+  }
 }
 
 h1 {
@@ -290,4 +298,50 @@ iframe {
 .bookshelf_title {
   font-weight: 600;
   font-size: 1em;
+}
+
+/* Keyframe Stuff */
+@-webkit-keyframes colours {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes colours {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes colours {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes colours {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
