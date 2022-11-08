@@ -149,11 +149,11 @@ main {
   margin: 32px 0 32px 0;
 }
 
-body > header {
+.content > header {
   text-align: center;
 }
 
-body > header h1 {
+.content > header h1 {
   font-size: 4em;
   text-transform: uppercase;
   font-style: italic;
