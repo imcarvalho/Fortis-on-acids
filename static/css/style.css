@@ -35,18 +35,7 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    313deg,
-    #fecaca,
-    #fde68a,
-    #a7f3d0,
-    #bfdbfe,
-    #c7d2fe,
-    #ddd6fe,
-    #fbcfe8
-  );
-  background-size: auto;
-  background-size: 1400% 1400%;
+  background: #ddd6fe;
   -webkit-animation: colours 20s ease infinite;
   -moz-animation: colours 20s ease infinite;
   -o-animation: colours 20s ease infinite;
