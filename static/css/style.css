@@ -293,18 +293,10 @@ article {
 }
 
 hr {
-  border: none;
+  border: 1px dashed var(--background-alt);
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-}
-
-hr:after {
-  content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
-  letter-spacing: -9.6px;
-  font-size: 60px;
-  color: var(--background-alt);
-  line-height: 0.5em;
 }
 
 blockquote {
