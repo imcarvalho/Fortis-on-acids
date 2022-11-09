@@ -141,6 +141,7 @@ header h1 {
 header h1 a {
   font-size: 0.65em;
   font-style: normal;
+  border-bottom: none;
 }
 
 article {
