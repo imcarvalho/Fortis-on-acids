@@ -25,16 +25,6 @@ body {
   box-shadow: $box-shadow;
 }
 
-@media (min-width: 800px) {
-  .content {
-    max-width: 750px;
-  }
-
-  header #avatar {
-    display: inline-block;
-  }
-}
-
 h1 {
   font-weight: 600;
   line-height: 1.2;
@@ -261,3 +251,11 @@ iframe {
   font-weight: 600;
   font-size: 1em;
 }
+
+.photos-grid-container {
+  /* needed to overrride the element style */
+  display: flex !important;
+  flex-direction: column;
+}
+
+@import 'media';

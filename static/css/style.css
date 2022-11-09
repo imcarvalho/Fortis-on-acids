@@ -1,17 +1,12 @@
 @font-face {
-  font-family: 'Exo';
-  src: url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf')
-      format('woff2 supports variations'),
-    url('/fonts/exo/Exo-Italic-VariableFont_wght.ttf')
-      format('woff2-variations');
+  font-family: "Exo";
+  src: url("/fonts/exo/Exo-Italic-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/exo/Exo-Italic-VariableFont_wght.ttf") format("woff2-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
 @font-face {
-  font-family: 'Exo';
-  src: url('/fonts/exo/Exo-VariableFont_wght.ttf')
-      format('woff2 supports variations'),
-    url('/fonts/exo/Exo-VariableFont_wght.ttf') format('woff2-variations');
+  font-family: "Exo";
+  src: url("/fonts/exo/Exo-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/exo/Exo-VariableFont_wght.ttf") format("woff2-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
@@ -63,7 +58,7 @@
 }
 html {
   color: rgba(0, 37, 109, 0.9);
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   line-height: 1.8;
   font-size: 18px;
 }
@@ -81,18 +76,9 @@ body {
   border-radius: 1em;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 transparent, 0 0 transparent,
-    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 transparent, 0 0 transparent, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-@media (min-width: 800px) {
-  .content {
-    max-width: 750px;
-  }
-  header #avatar {
-    display: inline-block;
-  }
-}
 h1 {
   font-weight: 600;
   line-height: 1.2;
@@ -155,7 +141,7 @@ article a header {
 }
 article header h1 {
   -webkit-margin-after: 0.2em;
-  margin-block-end: 0.2em;
+          margin-block-end: 0.2em;
 }
 article header h1 a {
   color: rgba(1, 0, 109, 0.65);
@@ -198,11 +184,11 @@ menu li {
   display: inline;
 }
 menu li::after {
-  content: ' | ';
+  content: " | ";
   color: rgba(0, 0, 0, 0.1);
 }
 menu li:last-child:after {
-  content: '';
+  content: "";
 }
 
 footer {
@@ -299,4 +285,25 @@ iframe {
 .bookshelf_title {
   font-weight: 600;
   font-size: 1em;
+}
+
+.photos-grid-container {
+  /* needed to overrride the element style */
+  display: flex !important;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .content {
+    max-width: 750px;
+  }
+  header #avatar {
+    display: inline-block;
+  }
+  .photos-grid-container {
+    display: grid !important;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: 33% 33% 33%;
+  }
 }
