@@ -311,7 +311,7 @@ iframe {
   display: flex !important;
   flex-direction: column;
 }
-.photos-grid-container a {
+.photos-grid-container > a {
   border-bottom: none;
 }
 

@@ -276,7 +276,7 @@ iframe {
   display: flex !important;
   flex-direction: column;
 
-  a {
+  & > a {
     border-bottom: none;
   }
 }
