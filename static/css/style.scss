@@ -9,10 +9,7 @@ html {
 
 body {
   background: $default-background;
-  -webkit-animation: colours 20s ease infinite;
-  -moz-animation: colours 20s ease infinite;
-  -o-animation: colours 20s ease infinite;
-  animation: colours 20s ease infinite;
+  animation: $animation;
 }
 
 .content {
@@ -283,6 +280,13 @@ iframe {
 
 ul {
   list-style: none;
+}
+
+.categories_list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 0;
 }
 
 @import 'media';

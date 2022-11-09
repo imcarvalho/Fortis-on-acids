@@ -2,22 +2,20 @@
 
 {{- if isset .Site.Taxonomies "categories" }}
 {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
-<ul>
+<h2>Post Categories</h2>
+<ul class="categories_list">
   {{- range $name, $items := .Site.Taxonomies.categories }}
-  <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+  <li>
+  	<a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">
+  		<strong>{{ $name | title | humanize }}</strong> ({{ $items.Count }})
+  	</a>
+  </li>
   {{- end }}
 </ul>
 {{- end }}
 {{- end }}
 
-{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-{{ if gt (len $list) 0 }}
-	<div class="archive_categories" style="border-bottom: 1px solid lightgray; padding-bottom: 15px; margin-bottom: 30px;">
-		{{ range $list }}
-			<p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-		{{ end }}
-	</div>
-{{ end }}
+<h2>Post List</h2>
 
 {{ $list := (where .Site.Pages "Type" "post") }}
 {{ range $list }}
@@ -27,4 +25,5 @@
 		<span class="p-summary">{{ .Summary | truncate 50 }}</span>
 	</p>
 
+{{ end }}
 {{ end }}
