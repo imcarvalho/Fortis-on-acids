@@ -28,10 +28,17 @@ body {
 h1 {
   font-weight: 600;
   line-height: 1.2;
+
+  a {
+    border-bottom: none;
+  }
 }
 
 h2 {
   font-weight: 500;
+  a {
+    border-bottom: none;
+  }
 }
 
 h3,
@@ -39,6 +46,9 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  a {
+    border-bottom: none;
+  }
 }
 
 a {
