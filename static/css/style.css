@@ -188,6 +188,9 @@ main {
 nav menu {
   margin-top: 0;
 }
+nav a {
+  border-bottom: none;
+}
 
 menu {
   list-style: none;
