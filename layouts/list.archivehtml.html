@@ -1,13 +1,14 @@
 {{ define "main" }}
 
-{{ $paginator := .Paginate (.Site.Taxonomies.categories) 5 }} 
-{{ range $paginator.Pages }}
-<p class="category-entry">
-	<a href="{{ .Permalink }}" class="u-url">
-	{{.Title}}
-	</a>
-</p>
-{{end}}
+{{- if isset .Site.Taxonomies "categories" }}
+{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+<ul>
+  {{- range $name, $items := .Site.Taxonomies.categories }}
+  <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+  {{- end }}
+</ul>
+{{- end }}
+{{- end }}
 
 {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 {{ if gt (len $list) 0 }}
