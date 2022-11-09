@@ -60,6 +60,10 @@ a {
 header {
   margin-bottom: 16px;
 
+  a {
+    border-bottom: none;
+  }
+
   .main-header {
     margin-bottom: 0;
 
@@ -88,7 +92,6 @@ header {
     a {
       font-size: 0.65em;
       font-style: normal;
-      border-bottom: none;
     }
   }
 }
