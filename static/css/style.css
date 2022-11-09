@@ -98,6 +98,7 @@ h6 {
 a {
   color: rgba(1, 0, 109, 0.65);
   text-decoration: none;
+  border-bottom: 1px dotted rgba(0, 37, 109, 0.9);
 }
 
 header {
@@ -291,6 +292,10 @@ iframe {
   /* needed to overrride the element style */
   display: flex !important;
   flex-direction: column;
+}
+
+ul {
+  list-style: none;
 }
 
 @media (min-width: 800px) {
