@@ -311,6 +311,9 @@ iframe {
   display: flex !important;
   flex-direction: column;
 }
+.photos-grid-container a {
+  border-bottom: none;
+}
 
 ul {
   list-style: none;

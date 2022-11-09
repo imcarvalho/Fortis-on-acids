@@ -275,6 +275,10 @@ iframe {
   /* needed to overrride the element style */
   display: flex !important;
   flex-direction: column;
+
+  a {
+    border-bottom: none;
+  }
 }
 
 ul {
