@@ -335,8 +335,9 @@ ul {
   }
   .photos-grid-container {
     display: grid !important;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    grid-template-columns: 33% 33% 33%;
+  }
+  .photos-grid-container .photos-grid-item {
+    width: 200px;
+    height: 200px;
   }
 }
