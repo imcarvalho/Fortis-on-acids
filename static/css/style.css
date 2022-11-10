@@ -4,6 +4,18 @@
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("woff2-variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("woff2-variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
 @-webkit-keyframes colours {
   0% {
     background: #fecaca;
@@ -76,6 +88,7 @@ body {
 h1 {
   font-weight: 600;
   line-height: 1.2;
+  font-family: "Montserrat";
 }
 h1 a {
   border-bottom: none;
@@ -83,6 +96,7 @@ h1 a {
 
 h2 {
   font-weight: 500;
+  font-family: "Montserrat";
 }
 h2 a {
   border-bottom: none;
@@ -93,6 +107,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  font-family: "Montserrat";
 }
 h3 a,
 h4 a,

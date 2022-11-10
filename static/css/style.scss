@@ -25,6 +25,7 @@ body {
 h1 {
   font-weight: 600;
   line-height: 1.2;
+  font-family: $font-family-titles;
 
   a {
     border-bottom: none;
@@ -33,6 +34,8 @@ h1 {
 
 h2 {
   font-weight: 500;
+  font-family: $font-family-titles;
+
   a {
     border-bottom: none;
   }
@@ -43,6 +46,8 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  font-family: $font-family-titles;
+
   a {
     border-bottom: none;
   }

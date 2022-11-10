@@ -5,5 +5,24 @@
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-VariableFont_wght.ttf')
+      format('woff2 supports variations'),
+    url('/fonts/montserrat/Montserrat-VariableFont_wght.ttf')
+      format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf')
+      format('woff2 supports variations'),
+    url('/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf')
+      format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
 
 $font-family: 'Mona Sans';
+$font-family-titles: 'Montserrat';
