@@ -6,13 +6,13 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("woff2-variations");
+  src: url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("woff2-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("woff2-variations");
+  src: url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("woff2-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
@@ -128,15 +128,8 @@ header {
 header a {
   border-bottom: none;
 }
-header.main-header {
+header .main-header {
   margin-bottom: 0;
-}
-header.main-header h1 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0.5em 0;
 }
 header #avatar {
   display: none;
@@ -192,6 +185,9 @@ main {
   font-style: italic;
   font-weight: 800;
   padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 nav menu {
