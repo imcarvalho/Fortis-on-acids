@@ -1,12 +1,6 @@
 @font-face {
-  font-family: "Exo";
-  src: url("/fonts/exo/Exo-Italic-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/exo/Exo-Italic-VariableFont_wght.ttf") format("woff2-variations");
-  font-weight: 100 1000;
-  font-stretch: 25% 151%;
-}
-@font-face {
-  font-family: "Exo";
-  src: url("/fonts/exo/Exo-VariableFont_wght.ttf") format("woff2 supports variations"), url("/fonts/exo/Exo-VariableFont_wght.ttf") format("woff2-variations");
+  font-family: "Mona Sans";
+  src: url("/fonts/mona-sans/Mona-Sans.ttf") format("woff2 supports variations"), url("/fonts/mona-sans/Mona-Sans.ttf") format("woff2-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
@@ -58,7 +52,7 @@
 }
 html {
   color: rgba(0, 37, 109, 0.9);
-  font-family: "Exo", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   line-height: 1.8;
   font-size: 18px;
 }
