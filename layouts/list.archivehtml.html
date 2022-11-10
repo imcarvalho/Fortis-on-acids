@@ -21,9 +21,7 @@
 
 <div class="archive">
 	<h2>Post List</h2>
-	
-	{{ $pagination :=  .Paginate (.Site.RegularPages.GroupByPublishDate "2006") 1 }}
-	{{ range $pagination }}
+	{{ range .Site.RegularPages.GroupByPublishDate "2006" }}
 	{{ if ne .Key "0001" }}
 	<div class="archive__group-year">
 		<h3 class="archive__group-year-header">{{ replace .Key "0001" "" }}</h2>
