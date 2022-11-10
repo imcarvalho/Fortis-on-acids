@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-{{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
+{{ $pagination :=  .Paginate (where .Site.RegularPages "Type" "post") 5 }}
+{{ range $pagination.Pages }}
 
 <article>
     {{ partial "article_header.html" . }}
