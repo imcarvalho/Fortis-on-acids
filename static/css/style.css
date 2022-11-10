@@ -113,10 +113,10 @@ header {
 header a {
   border-bottom: none;
 }
-header .main-header {
+header.main-header {
   margin-bottom: 0;
 }
-header .main-header h1 {
+header.main-header h1 {
   display: flex;
   width: 100%;
   justify-content: center;
