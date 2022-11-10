@@ -1,7 +1,8 @@
 .DS_Store
 .vscode
 *.log
-./static/css/animation.css
-./static/css/colors.css
-./static/css/fonts.css
-./static/css/media.css
+static/css/animation.css
+static/css/colors.css
+static/css/fonts.css
+static/css/media.css
+static/css/fonts.css
