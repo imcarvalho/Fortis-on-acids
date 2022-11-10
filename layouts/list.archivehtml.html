@@ -4,13 +4,13 @@
 {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
 <h2>Post Categories</h2>
 <ul class="categories_list">
-  {{- range $name, $items := .Site.Taxonomies.categories }}
-  <li>
-  	<a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">
-  		<strong>{{ $name | title | humanize }}</strong> ({{ $items.Count }})
-  	</a>
-  </li>
-  {{- end }}
+	{{- range $name, $items := .Site.Taxonomies.categories }}
+	<li>
+		<a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">
+			<strong>{{ $name | title | humanize }}</strong> ({{ $items.Count }})
+		</a>
+	</li>
+	{{- end }}
 </ul>
 {{- end }}
 {{- end }}
@@ -20,30 +20,32 @@
 {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "post" }}
 
 <div class="archive">
-  <h2>Post List</h2>
-  {{ range .Site.RegularPages.GroupByPublishDate "2006" }}
-  {{ if ne .Key "0001" }}
-  <div class="archive__group-year">
-    <h3 class="archive__group-year-header">{{ replace .Key "0001" "" }}</h2>
-      {{ range .Pages.GroupByDate "January" }}
-      <div class="archive__group-month">
-        <h3 class="archive__group-month-header">{{ .Key }}</h3>
-        <div class="archive__group-posts">
-          <ul>
-            {{ range where .Pages "Type" $contentTypeName }}
-            {{ if eq .Kind "page" }}
-            <li class="archive__post">
-             <a class="archive__post-title"
-             href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-           </li>
-           {{ end }}
-           {{ end }}
-         </ul>
-       </div>
-     </div>
-     {{ end }}
-   </div>
-   {{ end }}
-   {{ end }}
- </div>
- {{ end }}
+	<h2>Post List</h2>
+	
+	{{ $pagination :=  .Paginate (.Site.RegularPages.GroupByPublishDate "2006") 1 }}
+	{{ range $pagination }}
+	{{ if ne .Key "0001" }}
+	<div class="archive__group-year">
+		<h3 class="archive__group-year-header">{{ replace .Key "0001" "" }}</h2>
+			{{ range .Pages.GroupByDate "January" }}
+			<div class="archive__group-month">
+				<h3 class="archive__group-month-header">{{ .Key }}</h3>
+				<div class="archive__group-posts">
+					<ul>
+						{{ range where .Pages "Type" $contentTypeName }}
+						{{ if eq .Kind "page" }}
+						<li class="archive__post">
+							<a class="archive__post-title"
+							href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+						</li>
+						{{ end }}
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+		{{ end }}
+		{{ end }}
+	</div>
+	{{ end }}
