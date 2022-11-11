@@ -1,7 +1,9 @@
 {{ define "main" }}
 
-{{ $pagination :=  .Paginate (where .Site.RegularPages "Type" "post") 5 }}
-{{ range $pagination.Pages }}
+{{- $legit := .Site.Taxonomies.categories.Get "legitposting" }}
+{{ $paginator :=  .Paginate $legit 5 }}
+
+{{ range $paginator.Pages }}
 
 <article>
     {{ partial "article_header.html" . }}
